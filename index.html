@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+
+<html lang="cn" class="fontawesome-i2svg-active fontawesome-i2svg-complete">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <script src="3rd/jquery.min.js"></script>
+    <link rel="stylesheet" href="3rd/bootstrap.min.css">
+    <script src="3rd/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="3rd/alertify.min.css"/>
+    <script src="3rd/alertify.min.js"></script>
+    <script defer src="3rd/fontawesome.js.all.js" integrity="sha384-kW+oWsYx3YpxvjtZjFXqazFpA7UP/MbiY4jvs+RWZo2+N94PFZ36T6TFkc9O3qoB" crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#343a40">
+
+    <meta name="description"
+          content="Welcome to blockchain development. Your ICO is over, hype is drying up. Take the private keys, drain everything.">
+    <meta name="keywords"
+          content="Ethereum, F3D, Fomo3D, Proof of Weak Hands, P3D, PoWH3D, Cryptocurrency, ICO, Parody, Satire, Gambling, Jackpot, Lottery, Referral, Passive Income, UBI">
+    <meta name="author" content="">
+
+    <meta property="og:title" content="Your Personal Exit Scam">
+    <meta property="og:description"
+          content="Welcome to blockchain development. Your ICO is over, hype is drying up. Take the private keys, drain everything.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="favicon.ico">
+    <meta property="og:image:width" content="400">
+    <meta property="og:iamge:height" content="400">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/ghostframe.css">
+
+    <title>以太方舟</title>
+    <style type="text/css"></style>
+    <link type="text/css" rel="stylesheet" charset="UTF-8" href="3rd/translateelement.css">
+
+    <script src="3rd/web3.js"></script>
+    <script src="3rd/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/ark_scratch_card.js"></script>
+
+</head>
+
+<body class="" style="">
+
+<module-bash data-is="state-bash">
+    <div id="terminal" style="visibility: hidden;">
+        <ul id="commandLine">
+            <li class="intro">=================================</li>
+            <li class="intro">Access to this machine is logged.</li>
+            <li class="intro">Misuse is reported.</li>
+            <li class="intro">=================================</li>
+            <li class="prompt"><span class="ps1">player@jekyllisland ~ $</span> <input type="text"
+                                                                                       class="commandInput active"></li>
+        </ul>
+    </div>
+</module-bash>
+
+<div id="main-wrapper">
+    <!-- navigation -->
+    <header class="topbar fixed-top" style="">
+        <module-navbar data-is="state-navbar">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark jumboshade">
+                <div class="container"><a class="navbar-brand" style="font-size:1.5rem"
+                                          href="#">以太方舟</a>
+                    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                            data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                            aria-label="Toggle navigation" style=""><span class="navbar-toggler-icon"></span></button>
+                    <div class="navbar-collapse flex-column collapse" id="navbarNav" style="">
+                        <ul class="nav nav-pills w-100">
+                            <li class="nav-item"><a class="nav-link nav-link-blu-on btn-blu"
+                                                    href="#">更多玩法</a></li>
+                            <li class="nav-item"><a class="nav-link nav-link-purp-on nav-link-purp"
+                                                    href="#">待添加</a></li>
+                            <li class="nav-item mr-auto"><a class="nav-link-gren-on nav-link nav-link-gren"
+                                                            href="#">敬请期待</a></li>
+                            <li class="nav-item"><a class="nav-link nav-link-purp" target="_new"
+                                                    href="#">大吉大利</a></li>
+                        </ul>
+                        <ul class="nav nav-tabs tabs-border-adjust w-100 text-light no-mobile">
+                            <div style="min-width: 7rem" class="col-auto">
+                                <svg class="svg-inline--fa fa-stopwatch fa-w-14" aria-hidden="true" data-prefix="fas"
+                                     data-icon="stopwatch" role="img" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 448 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                          d="M432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-104 76.3-190.2 176-205.5V64h-28c-6.6 0-12-5.4-12-12V12c0-6.6 5.4-12 12-12h120c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-28v34.5c37.5 5.8 71.7 21.6 99.7 44.6l27.5-27.5c4.7-4.7 12.3-4.7 17 0l28.3 28.3c4.7 4.7 4.7 12.3 0 17l-29.4 29.4-.6.6C419.7 223.3 432 262.2 432 304zm-176 36V188.5c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12V340c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+                                </svg><!-- <i class="fas fa-stopwatch"></i> --> <span
+                                    class="boxtimer lead small">--:--</span></div>
+                            <div class="col-auto yourkeys">
+                                <svg class="svg-inline--fa fa-key fa-w-16" aria-hidden="true" data-prefix="fas"
+                                     data-icon="key" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                     data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                          d="M512 176.001C512 273.203 433.202 352 336 352c-11.22 0-22.19-1.062-32.827-3.069l-24.012 27.014A23.999 23.999 0 0 1 261.223 384H224v40c0 13.255-10.745 24-24 24h-40v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-78.059c0-6.365 2.529-12.47 7.029-16.971l161.802-161.802C163.108 213.814 160 195.271 160 176 160 78.798 238.797.001 335.999 0 433.488-.001 512 78.511 512 176.001zM336 128c0 26.51 21.49 48 48 48s48-21.49 48-48-21.49-48-48-48-48 21.49-48 48z"></path>
+                                </svg><!-- <i class="fas fa-key"></i> --> <span
+                                    class="lead small keycount">0.0000</span></div>
+                            <div class="col-auto airdrop">
+                                <svg class="svg-inline--fa fa-parachute-box fa-w-16" aria-hidden="true"
+                                     data-prefix="fas" data-icon="parachute-box" role="img"
+                                     xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                          d="M511.9 175c-9.1-75.6-78.4-132.4-158.3-158.7C390 55.7 416 116.9 416 192h28.1L327.5 321.5c-2.5-.6-4.8-1.5-7.5-1.5h-48V192h112C384 76.8 315.1 0 256 0S128 76.8 128 192h112v128h-48c-2.7 0-5 .9-7.5 1.5L67.9 192H96c0-75.1 26-136.3 62.4-175.7C78.5 42.7 9.2 99.5.1 175c-1.1 9.1 6.8 17 16 17h8.7l136.7 151.9c-.7 2.6-1.6 5.2-1.6 8.1v128c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32V352c0-2.9-.9-5.4-1.6-8.1L487.1 192h8.7c9.3 0 17.2-7.8 16.1-17z"></path>
+                                </svg><!-- <i class="fas fa-parachute-box"></i> --> <span
+                                    class="airdropcounter lead small">30%</span></div>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="d-flex only-mobile">
+                        <div class="p-2 ticktock">
+                            <svg class="svg-inline--fa fa-stopwatch fa-w-14" aria-hidden="true" data-prefix="fas"
+                                 data-icon="stopwatch" role="img" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 448 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                      d="M432 304c0 114.9-93.1 208-208 208S16 418.9 16 304c0-104 76.3-190.2 176-205.5V64h-28c-6.6 0-12-5.4-12-12V12c0-6.6 5.4-12 12-12h120c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-28v34.5c37.5 5.8 71.7 21.6 99.7 44.6l27.5-27.5c4.7-4.7 12.3-4.7 17 0l28.3 28.3c4.7 4.7 4.7 12.3 0 17l-29.4 29.4-.6.6C419.7 223.3 432 262.2 432 304zm-176 36V188.5c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12V340c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12z"></path>
+                            </svg><!-- <i class="fas fa-stopwatch"></i> --> <span
+                                class="boxtimer lead small">--:--</span></div>
+                        <div class="p-2 yourkeys">
+                            <svg class="svg-inline--fa fa-key fa-w-16" aria-hidden="true" data-prefix="fas"
+                                 data-icon="key" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                 data-fa-i2svg="">
+                                <path fill="currentColor"
+                                      d="M512 176.001C512 273.203 433.202 352 336 352c-11.22 0-22.19-1.062-32.827-3.069l-24.012 27.014A23.999 23.999 0 0 1 261.223 384H224v40c0 13.255-10.745 24-24 24h-40v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-78.059c0-6.365 2.529-12.47 7.029-16.971l161.802-161.802C163.108 213.814 160 195.271 160 176 160 78.798 238.797.001 335.999 0 433.488-.001 512 78.511 512 176.001zM336 128c0 26.51 21.49 48 48 48s48-21.49 48-48-21.49-48-48-48-48 21.49-48 48z"></path>
+                            </svg><!-- <i class="fas fa-key"></i> --> <span class="lead small keycount">0.0000</span>
+                        </div>
+                        <div class="p-2 airdrop">
+                            <svg class="svg-inline--fa fa-parachute-box fa-w-16" aria-hidden="true" data-prefix="fas"
+                                 data-icon="parachute-box" role="img" xmlns="http://www.w3.org/2000/svg"
+                                 viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                      d="M511.9 175c-9.1-75.6-78.4-132.4-158.3-158.7C390 55.7 416 116.9 416 192h28.1L327.5 321.5c-2.5-.6-4.8-1.5-7.5-1.5h-48V192h112C384 76.8 315.1 0 256 0S128 76.8 128 192h112v128h-48c-2.7 0-5 .9-7.5 1.5L67.9 192H96c0-75.1 26-136.3 62.4-175.7C78.5 42.7 9.2 99.5.1 175c-1.1 9.1 6.8 17 16 17h8.7l136.7 151.9c-.7 2.6-1.6 5.2-1.6 8.1v128c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32V352c0-2.9-.9-5.4-1.6-8.1L487.1 192h8.7c9.3 0 17.2-7.8 16.1-17z"></path>
+                            </svg><!-- <i class="fas fa-parachute-box"></i> --> <span class="airdropcounter lead small">30%</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </module-navbar>
+    </header>
+    <!-- /navigation -->
+    <!-- noscript message -->
+    <noscript>
+        <div class="row">
+            <div class="col">
+                <div class="alert alert-purp pulse text-center text-light" role="alert" style="margin-top:8rem;">Please
+                    enable Javascript to play
+                </div>
+            </div>
+        </div>
+    </noscript>
+    <!-- /noscript -->
+    <!-- modal loading -->
+    <!-- toggle with jQuery('#loading').modal({backdrop: 'static', keyboard: false})
+	  this makes it impossible to close modal by clicking outside the box -->
+    <div class="modal fade" id="loading" tabindex="-1" role="dialog" style="z-index: 99999999; display: none;"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-body" style="padding-top:1.5rem; padding-bottom:1.5rem;">
+                    <div class="row justify-content-between">
+                        <div class="col-auto">
+                            Please check your Metamask...
+                        </div>
+                        <div class="col-2">
+                            <div class="miniloader"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal loading -->
+    <!-- modal vanity -->
+    <div class="modal fade" id="vanity" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-body" style="padding-top:1.5rem; padding-bottom:1.5rem;">
+                    <!-- Name chooser -->
+                    <div class="row">
+                        <div class="col">
+                            <p class="lead nomarginb">Graffiti your name on the Blockchain</p>
+                        </div>
+                        <div class="col-auto">
+                            <p class="text-right nomarginb">
+                                <a href="http://exitscam.me/play#" class="closemodal">
+                                    <svg class="svg-inline--fa fa-times fa-w-11" aria-hidden="true" data-prefix="fas"
+                                         data-icon="times" role="img" xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="0 0 352 512" data-fa-i2svg="">
+                                        <path fill="currentColor"
+                                              d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path>
+                                    </svg><!-- <i class="fas fa-times"></i> -->
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-prepend">
+                                            <button class="btn btn-outline-yel" type="button" id="randomName">
+                                                Random
+                                            </button>
+                                        </div>
+                                        <input class="form-control text-center" type="text" placeholder="type here"
+                                               id="nameInput">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button class="btn btn-purp btn-block btn-lg" id="namePurchase">
+                                <svg class="svg-inline--fa fa-ethereum fa-w-10" aria-hidden="true" data-prefix="fab"
+                                     data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg"
+                                     viewBox="0 0 320 512" data-fa-i2svg="">
+                                    <path fill="currentColor"
+                                          d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path>
+                                </svg><!-- <i class="fab fa-ethereum"></i> --> Purchase for 0.01 ETH
+                            </button>
+                            <p style="font-size:0.7rem;color:#afafaf"> The fee is distributed across community members
+                                who made this game possible.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="spacer" class="spacer"></div>
+<!-- main content (exchangeable) -->
+<module-template data-is="state-play">
+    <div class="blurryboy"></div>
+    <div class="jumbotron rounded-0 text-center text-light teaser-cover">
+        <div class="container">
+
+            <h1 class="display-1 scammed">剩余奖金池</h1>
+            <h1 class="display-3">
+                <span class="ethglitch titleglow">
+                    <t id="ark_bonus_left">1000</t>
+                    <svg class="svg-inline--fa fa-ethereum fa-w-10 ethglow" aria-hidden="true" data-prefix="fab" data-icon="ethereum" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" data-fa-i2svg="">
+                        <path fill="currentColor" d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path>
+                    </svg>
+                </span>
+            </h1>
+
+            <p class="h4"><span class="headtimer">--:--</span></p>
+            <a href="javascript:void(0)" class="buyOneTicket btn btn-lg btn-block btn-purp pulse marginb">
+                <div class="row">
+                    <div class="col-sm-1.5 no-mobile" style="padding-left: 10px"> 1x
+                        <svg class="svg-inline--fa fa-key fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="key"
+                             role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                            <path fill="currentColor"
+                                  d="M512 176.001C512 273.203 433.202 352 336 352c-11.22 0-22.19-1.062-32.827-3.069l-24.012 27.014A23.999 23.999 0 0 1 261.223 384H224v40c0 13.255-10.745 24-24 24h-40v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-78.059c0-6.365 2.529-12.47 7.029-16.971l161.802-161.802C163.108 213.814 160 195.271 160 176 160 78.798 238.797.001 335.999 0 433.488-.001 512 78.511 512 176.001zM336 128c0 26.51 21.49 48 48 48s48-21.49 48-48-21.49-48-48-48-48 21.49-48 48z"></path>
+                        </svg><!-- <i class="fas fa-key"></i> --> </div>
+                    <div class="col-sm-11"><span style="margin-right: 1rem;margin-left: -1rem"
+                                                 class="only-mobile mobile-text">1x <svg
+                            class="svg-inline--fa fa-key fa-w-16" aria-hidden="true" data-prefix="fas" data-icon="key"
+                            role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg=""><path
+                            fill="currentColor"
+                            d="M512 176.001C512 273.203 433.202 352 336 352c-11.22 0-22.19-1.062-32.827-3.069l-24.012 27.014A23.999 23.999 0 0 1 261.223 384H224v40c0 13.255-10.745 24-24 24h-40v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-78.059c0-6.365 2.529-12.47 7.029-16.971l161.802-161.802C163.108 213.814 160 195.271 160 176 160 78.798 238.797.001 335.999 0 433.488-.001 512 78.511 512 176.001zM336 128c0 26.51 21.49 48 48 48s48-21.49 48-48-21.49-48-48-48-48 21.49-48 48z"></path></svg>
+                        <!-- <i class="fas fa-key"></i> --></span> 快速来一把!
+                    </div>
+                </div>
+            </a></div>
+    </div>
+    <div class="container" style="margin-top:-1rem;">
+        <div class="row cta-ticket" style="margin-top:-5rem;">
+            <div class="col">
+                <div class="alert alert-purp pulse text-center text-light" role="alert">Buy a key to start a new ICO
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <ul class="nav nav-tabs tabs-border-adjust" id="buyTabs" role="tablist">
+                    <li class="nav-item tab-item"><a class="nav-link tab-link active show" id="purchaseTab"
+                                                     data-toggle="tab" href="#purchaseArea"
+                                                     role="tab" aria-controls="purchaseArea" aria-selected="true">刮开中奖</a>
+                    </li>
+                    <li class="nav-item tab-item"><a class="nav-link tab-link" id="vaultTab" data-toggle="tab"
+                                                     href="#vaultArea" role="tab"
+                                                     aria-controls="vaultArea" aria-selected="false">历史奖券</a></li>
+                </ul>
+                <div class="tab-content" id="buyArea">
+
+                    <div class="tab-pane fade active show" id="purchaseArea" role="tabpanel"
+                         aria-labelledby="purchaseArea">
+                        <div class="jumbotron jumbotron-adjust text-light bg-dark jumboshade tab-rounded">
+                            <hr>
+                            <div class="row">
+                                <div class="col">
+                                    剩余奖券：<t id="ark_left_card_num">0</t>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div style="width: 300px;height: 150px;text-align: center;line-height: 150px;left:50%;position: relative;margin-left:-150px;">
+                                        <canvas id="ark_scratch_card" style="position: absolute;top: 0;left: 0;top: 0;bottom: 0;"></canvas>
+                                        <div id="ark_card_info" >奖券在路上...</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col"><p class="lead nomarginb">购买奖券</p></div>
+                                <div class="col-auto">
+                                    <p class="text-right nomarginb tutorial" style="display: none;">
+                                        <svg class="svg-inline--fa fa-arrow-right fa-w-14 pulsetutorial tutorialArrow"
+                                             aria-hidden="true" data-prefix="fas" data-icon="arrow-right" role="img"
+                                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg="">
+                                            <path fill="currentColor"
+                                                  d="M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z"></path>
+                                        </svg>
+                                        <!-- <i class="fas fa-arrow-right pulsetutorial tutorialArrow" style="display: none;"></i> -->
+                                        <a tabindex="0" type="button" class="qbtn" role="button" data-toggle="popover"
+                                           data-trigger="focus" data-html="true" data-placement="bottom" title=""
+                                           data-content="
+&lt;b style=&quot;color:white&quot; class=&quot;titlepopoutrightmini ethglow-calm-down-sumpunk&quot;&gt;Keys&lt;/b&gt; are your stake in each round, think of them as your own personal bits of the &lt;b class=&quot;titlepopout-right-mini-grey-shadow&quot;&gt;private keys&lt;/b&gt; to the contract!&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;
+&lt;b&gt;Buying 1 or more Full Keys&lt;/b&gt;&lt;br&gt;
+-Adds 30 seconds to the timer for every key purchased, up to a hard-cap of 24 hours.&lt;br&gt;
+-Lets &lt;span class=popoverrightmini&gt;you&lt;/span&gt; exit-scam the contract if time runs out and &lt;span class=popoverrightmini&gt;you&lt;/span&gt; were the last player to buy a full key.&lt;br&gt;
+&lt;br&gt;
+- Every &lt;b&gt;Key&lt;/b&gt; you own also siphons and locks up portions of all the ethereum that flows through game and deposits it directly into your vault&lt;br&gt;
+&lt;br&gt;
+- &lt;b class=&quot;tooltipyellow&quot;&gt; At the end of the round &lt;/b&gt; your keys automatically guarantee you a sizable chunk of the exit-scam, come back when it&#39;s all over!
+&lt;br&gt;
+&lt;br&gt;
+- Lastly the price naturally scales upwards in value the longer a round runs for, encouraging a race to buy in first, every time an exit scam ends!
+&lt;br&gt;&lt;br&gt;
+You can ensure you&#39;re the final winner, or buy a large sum of keys and simply rake in dividends as the round continues. &lt;br&gt;&lt;b&gt;Bet on how greedy the other players might be&lt;/b&gt;
+" data-original-title="Exit Scams and You!">
+                                            <svg class="svg-inline--fa fa-question-circle fa-w-16" aria-hidden="true"
+                                                 data-prefix="far" data-icon="question-circle" role="img"
+                                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                 data-fa-i2svg="">
+                                                <path fill="currentColor"
+                                                      d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 448c-110.532 0-200-89.431-200-200 0-110.495 89.472-200 200-200 110.491 0 200 89.471 200 200 0 110.53-89.431 200-200 200zm107.244-255.2c0 67.052-72.421 68.084-72.421 92.863V300c0 6.627-5.373 12-12 12h-45.647c-6.627 0-12-5.373-12-12v-8.659c0-35.745 27.1-50.034 47.579-61.516 17.561-9.845 28.324-16.541 28.324-29.579 0-17.246-21.999-28.693-39.784-28.693-23.189 0-33.894 10.977-48.942 29.969-4.057 5.12-11.46 6.071-16.666 2.124l-27.824-21.098c-5.107-3.872-6.251-11.066-2.644-16.363C184.846 131.491 214.94 112 261.794 112c49.071 0 101.45 38.304 101.45 88.8zM298 368c0 23.159-18.841 42-42 42s-42-18.841-42-42 18.841-42 42-42 42 18.841 42 42z"></path>
+                                            </svg><!-- <i class="far fa-question-circle"></i> --> </a></p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col">
+                                    <div id="purchase" class="tab-pane fade show active" role="tabpanel"><p
+                                            class="font-weight-light small" id="airdrop_chance">每张奖券0.01ETH,购买后可刮奖!</p>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="input-group mb-3">
+                                                    <div class="input-group-prepend"><span class="input-group-text"> <svg
+                                                            class="svg-inline--fa fa-key fa-w-16" aria-hidden="true"
+                                                            data-prefix="fas" data-icon="key" role="img"
+                                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                                                            data-fa-i2svg=""><path fill="currentColor"
+                                                                                   d="M512 176.001C512 273.203 433.202 352 336 352c-11.22 0-22.19-1.062-32.827-3.069l-24.012 27.014A23.999 23.999 0 0 1 261.223 384H224v40c0 13.255-10.745 24-24 24h-40v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24v-78.059c0-6.365 2.529-12.47 7.029-16.971l161.802-161.802C163.108 213.814 160 195.271 160 176 160 78.798 238.797.001 335.999 0 433.488-.001 512 78.511 512 176.001zM336 128c0 26.51 21.49 48 48 48s48-21.49 48-48-21.49-48-48-48-48 21.49-48 48z"></path></svg>
+                                                        <!-- <i class="fas fa-key"></i> --> </span></div>
+                                                    <input type="number" id="tixToBuy" class="form-control text-center"
+                                                           value="1" min="1">
+                                                    <div class="input-group-append"><span class="input-group-text"
+                                                                                          id="tixQuotation">@ 0.01 ETH</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row marginb">
+                                            <div class="col">
+                                                <div class="btn-group d-flex" role="group">
+                                                    <button id="addOne" class="btn btn-outline-yel w-100 increment ark_fast_eth_input" value="1">+ 1
+                                                        Key
+                                                    </button>
+                                                    <button id="addTwo" class="btn btn-outline-yel w-100 increment ark_fast_eth_input" value="2">+ 2
+                                                        Keys
+                                                    </button>
+                                                    <button id="addFive" class="btn btn-outline-yel w-40 increment ark_fast_eth_input" value="5">+
+                                                        5
+                                                    </button>
+                                                    <button id="addTen" class="btn btn-outline-yel w-30 increment ark_fast_eth_input" value="10">+
+                                                        10
+                                                    </button>
+                                                    <button id="addHundred" class="btn btn-outline-yel w-30 increment ark_fast_eth_input" value="100">+
+                                                        100
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="position: relative;">
+                                            <div class="col">
+                                                <button type="button" id="tixBuy"
+                                                        class="btn btn-block btn-purp btn-lg ticketProcess">
+                                                    <svg class="svg-inline--fa fa-ethereum fa-w-10" aria-hidden="true"
+                                                         data-prefix="fab" data-icon="ethereum" role="img"
+                                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"
+                                                         data-fa-i2svg="">
+                                                        <path fill="currentColor"
+                                                              d="M311.9 260.8L160 353.6 8 260.8 160 0l151.9 260.8zM160 383.4L8 290.6 160 512l152-221.4-152 92.8z"></path>
+                                                    </svg><!-- <i class="fab fa-ethereum"></i> --> Send ETH
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="vaultArea" role="tabpanel" aria-labelledby="vaultArea">
+                        <div class="jumbotron jumbotron-adjust text-light bg-dark jumboshade tab-rounded">
+                            <hr>
+                            <div class="jumbotron jumbotron-adjust teamscore">
+                                <ul id="ark_bonus_self_history">
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm">
+                <div>
+                    <div class="tab-pane fade show active" id="potArea" role="tabpanel" aria-labelledby="potArea">
+                        <div class="jumbotron jumbotron-adjust text-light bg-dark jumboshade tab-rounded">
+                            <div class="row">
+                                <div class="col"><p class="nomarginb text-center">实时中奖消息</p></div>
+                            </div>
+                            <hr>
+
+                            <div class="jumbotron jumbotron-adjust teamscore">
+                                <table id="ark_bonus_message"></table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <section class="copyright"><p style="font-size:1rem" align="center"> © 2019 <a><b>以太方舟</b></a>. All
+                    Rights Reserved. <br></p></section>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="gameover" tabindex="-1" role="dialog" aria-labelledby="gameoverTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content bg-dark text-light">
+                <div class="modal-header"><h5 class="modal-title" id="gameoverTitle">Modal Title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">×</span></button>
+                </div>
+                <div class="modal-body"> Modal Content</div>
+            </div>
+        </div>
+    </div>
+</module-template>
+<module-airdrop data-is="state-airdrop">
+    <div class="container" id="airdrop" style="z-index: 999; display:none;">
+        <div class="row">
+            <div class="col-6" style="position: fixed; bottom:0; left:25%;">
+                <div class="jumbotron jumbotron-adjust jumboshade bg-dark text-light">
+                    <div class="row">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col"><p class="lead">Airdrop: You just hit the jackpot baby,</p></div>
+                            </div>
+                            <div class="row">
+                                <div class="col"><p class="font-weight-light string">You've drained at least 25% of the
+                                    airdrop POT. (PLACEHOLDER)</p></div>
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <svg class="svg-inline--fa fa-parachute-box fa-w-16 airdropicon ethglow-its-okay-justo"
+                                 aria-hidden="true" data-prefix="fas" data-icon="parachute-box" role="img"
+                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" data-fa-i2svg="">
+                                <path fill="currentColor"
+                                      d="M511.9 175c-9.1-75.6-78.4-132.4-158.3-158.7C390 55.7 416 116.9 416 192h28.1L327.5 321.5c-2.5-.6-4.8-1.5-7.5-1.5h-48V192h112C384 76.8 315.1 0 256 0S128 76.8 128 192h112v128h-48c-2.7 0-5 .9-7.5 1.5L67.9 192H96c0-75.1 26-136.3 62.4-175.7C78.5 42.7 9.2 99.5.1 175c-1.1 9.1 6.8 17 16 17h8.7l136.7 151.9c-.7 2.6-1.6 5.2-1.6 8.1v128c0 17.7 14.3 32 32 32h128c17.7 0 32-14.3 32-32V352c0-2.9-.9-5.4-1.6-8.1L487.1 192h8.7c9.3 0 17.2-7.8 16.1-17z"></path>
+                            </svg><!-- <i class="fas fa-parachute-box airdropicon ethglow-its-okay-justo"></i> --></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</module-airdrop>
+<module-modal>
+</module-modal>
+<!-- /main content -->
+
+
+<script src="3rd/clipboard.min.js"></script>
+<script>
+
+
+    // Vanity modal
+    jQuery(".vanity").click(function () {
+        jQuery('#vanity').modal()
+    })
+    jQuery(".closemodal").click(function () {
+        jQuery('#vanity').modal('hide')
+    })
+
+    // Random Name generator
+    jQuery('#randomName').click(function () {
+        jQuery('#nameInput').val(namegen.generate());
+    })
+
+</script>
+
+</body>
+
+
+
+</html>
